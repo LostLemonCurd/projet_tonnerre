@@ -3,7 +3,7 @@
 
 body
 {
-	background-image: url("photos/background.jpg");	
+	background-image: url("photos/background.jpg");
 	font-family: 'Gambetta-Variable', Impact, serif;
 	color: yellow;
 }
@@ -14,7 +14,7 @@ body
 }
 /* Essais d'adaptation à différents formats d'écrans */
 
-@media screen and (min-width: 600px)
+@media (min-width: 600px)
 {
 	header
 	{
@@ -28,15 +28,30 @@ body
 	{
 		border-bottom: 2px solid red;
 		margin: auto;
-  }
+  	}
 	header img
 	{
 		width: 100%;
 		height: auto;
 	}
 	/* <nav> */
+	.nav-btn
+	{
+		display: inline-block;
+        	position: absolute;
+        	right: 0px;
+        	top: 0px;
+	}
+	.nav > .nav-btn > label
+	{
+   		display: inline-block;
+    		width: 50px;
+    		height: 50px;
+    		padding: 13px;
+  	}
 
-	ul 
+
+	ul
 	{
 		list-style: none;
 		display: flex;
@@ -52,7 +67,7 @@ body
 		width: 200px;
 		margin-right: 5px;
 	}
-	a 
+	a
 	{
 		text-decoration: none;
 		color: yellow;
@@ -61,10 +76,7 @@ body
 	{
 		color: red;
 	}
-	.dropdwn
-	{
-		display: none;
-	}
+
 	/* Définition de l'élément <section> */
 
 	#section
@@ -135,7 +147,7 @@ body
 		color: black;
 		margin-top: 1px;
 	}
-	aside img 
+	aside img
 	{
 		max-width: 100%;
 		height: auto;
@@ -183,13 +195,13 @@ body
 		color: red;
 	}
 
-	/* Flèche retour haut */ 
+	/* Flèche retour haut */
 
 	#arrow
 	{
 		position: fixed;
 		right: 1px;
-		bottom: 1px;	
+		bottom: 1px;
 		height: 45px;
 		width: 20px;
 		border: 2px solid #FF7800;
@@ -216,7 +228,7 @@ body
 		display: flex;
 		flex-direction: column;
 	}
-	header img 
+	header img
 	{
 		justify-content: center;
 		align-items: center;
@@ -226,7 +238,7 @@ body
 		justify-content: center;
 		align-items: center;
     }
-	li 
+	li
 	{
 		margin-bottom: 2px;
 	}
@@ -235,7 +247,7 @@ body
 		display: flex;
 		flex-direction: column;
 	}
-	section 
+	section
 	{
 		display: flex;
 		flex-direction: column;
@@ -243,7 +255,7 @@ body
 		justify-content: center;
 		text-align: center
 	}
-	aside 
+	aside
 	{
 		display: flex;
 		flex-direction: column;
@@ -273,8 +285,15 @@ header img
 	height: auto;
 }
 /* <nav> */
-
-ul 
+nav-btn
+{
+	display: none;
+}
+.nav-check
+{
+display: none;
+}
+ul
 {
 	list-style: none;
 	display: flex;
@@ -290,7 +309,7 @@ li
 	width: 200px;
 	margin-right: 5px;
 }
-a 
+a
 {
 	text-decoration: none;
 	color: yellow;
@@ -299,10 +318,7 @@ a:hover
 {
 	color: red;
 }
-.dropdwn
-{
-	display: none;
-}
+
 /* Définition de l'élément <section> */
 
 #section
@@ -352,7 +368,7 @@ aside
 	background-color: #FF7800;
 	width: 100%;
 }
-figcaption 
+figcaption
 {
 	border-bottom: 5px;
 }
@@ -380,7 +396,7 @@ aside a
 	color: black;
 	margin-top: 1px;
 }
-aside img 
+aside img
 {
 	max-width: 100%;
 	height: auto;
@@ -428,13 +444,13 @@ footer a:hover
 	color: red;
 }
 
-/* Flèche retour haut */ 
+/* Flèche retour haut */
 
 #arrow
 {
 	position: fixed;
 	right: 1px;
-	bottom: 1px;	
+	bottom: 1px;
 	height: 45px;
 	width: 20px;
 	border: 2px solid #FF7800;
