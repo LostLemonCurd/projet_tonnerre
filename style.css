@@ -1,0 +1,447 @@
+
+/* Éléments principaux du site */
+
+body
+{
+	background-image: url("photos/background.jpg");	
+	font-family: 'Gambetta-Variable', Impact, serif;
+	color: yellow;
+}
+#bloc-page
+{
+	margin: auto;
+	width: device-width;
+}
+/* Essais d'adaptation à différents formats d'écrans */
+
+@media screen and (min-width: 600px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		border-bottom: 2px solid red;
+		width: 90%;
+		margin: auto;
+	}
+	#logo
+	{
+		border-bottom: 2px solid red;
+		margin: auto;
+  }
+	header img
+	{
+		width: 100%;
+		height: auto;
+	}
+	/* <nav> */
+
+	ul 
+	{
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	li
+	{
+		border: 2px solid #FF7800;
+		border-radius: 5px;
+		text-align: center;
+		padding: 2px 0px 2px 0px;
+		width: 200px;
+		margin-right: 5px;
+	}
+	a 
+	{
+		text-decoration: none;
+		color: yellow;
+	}
+	a:hover
+	{
+		color: red;
+	}
+	.dropdwn
+	{
+		display: none;
+	}
+	/* Définition de l'élément <section> */
+
+	#section
+	{
+		display: flex;
+		flex-direction: row;
+		text-align: justify;
+		border-bottom: 2px solid red;
+		border-left: 2px solid red;
+		border-right: 2px solid red;
+		width: 90%;
+		margin: auto;
+	}
+	section
+	{
+		margin: 0px 5px 0px 5px;
+		background-color: rgba(0, 0, 0, 1);
+		width: 100%
+	}
+	section h2
+	{
+		margin-bottom: 1px;
+		font-size: 2em;
+		font-style: italic;
+		text-decoration: underline;
+		text-decoration-color: red;
+	}
+	section p
+	{
+		margin-top: 0px;
+	}
+	aside
+	{
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0px 1px 0px;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 0.9em;
+		color: black;
+	}
+	.spotify
+	{
+		border: 2px solid red;
+		background-color: #FF7800;
+		width: 25%
+	}
+	.photo
+	{
+		border: 2px solid red;
+		background-color: #FF7800;
+		width: 25%
+	}
+	aside h3
+	{
+		text-decoration: underline;
+		text-decoration-color: red;
+		margin-bottom: 1px;
+		text-align: center;
+	}
+	aside a
+	{
+		border: 2px solid black;
+		border-radius: 5px;
+		padding: 2px 2px 2px 2px;
+		font-size: 0.9em;
+		text-decoration: none;
+		color: black;
+		margin-top: 1px;
+	}
+	aside img 
+	{
+		max-width: 100%;
+		height: auto;
+	}
+	aside iframe
+	{
+		border: 0px;
+		height: 250px;
+
+	}
+
+	/* Définition de l'élément <footer> */
+	footer
+	{
+		width: 90%;
+		margin: auto;
+	}
+	footer h2
+	{
+		text-align: center;
+		margin-top: 10px;
+		text-decoration: underline;
+		text-decoration-color: red;
+	}
+	#fondateurs
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	footer a[href*="html"]
+	{
+		border: 2px solid #FF7800;
+		border-radius: 5px;
+		padding: 2px 2px 2px 2px;
+		margin-right: 10px;
+		width: 200px;
+		text-align: center;
+		text-decoration: none;
+		color: yellow;
+	}
+	footer a:hover
+	{
+		color: red;
+	}
+
+	/* Flèche retour haut */ 
+
+	#arrow
+	{
+		position: fixed;
+		right: 1px;
+		bottom: 1px;	
+		height: 45px;
+		width: 20px;
+		border: 2px solid #FF7800;
+		border-radius: 5px;
+		padding: 2px 2px 2px 2px;
+		margin-right: 10px;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: yellow;
+	}
+
+}
+
+
+@media screen and (max-device-width: 480px)
+{
+	#bloc-page
+    {
+		width: auto;
+        margin: auto;
+    }
+	header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	header img 
+	{
+		justify-content: center;
+		align-items: center;
+	}
+    ul
+    {
+		justify-content: center;
+		align-items: center;
+    }
+	li 
+	{
+		margin-bottom: 2px;
+	}
+	#section
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	section 
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center
+	}
+	aside 
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/* Définition de l'élément <header> */
+
+header
+{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid red;
+	width: 90%;
+	margin: auto;
+}
+#logo
+{
+	border-bottom: 2px solid red;
+	margin: auto;
+}
+header img
+{
+	width: 100%;
+	height: auto;
+}
+/* <nav> */
+
+ul 
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+li
+{
+	border: 2px solid #FF7800;
+	border-radius: 5px;
+	text-align: center;
+	padding: 2px 0px 2px 0px;
+	width: 200px;
+	margin-right: 5px;
+}
+a 
+{
+	text-decoration: none;
+	color: yellow;
+}
+a:hover
+{
+	color: red;
+}
+.dropdwn
+{
+	display: none;
+}
+/* Définition de l'élément <section> */
+
+#section
+{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	border-bottom: 2px solid red;
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+	width: 90%;
+	margin: auto;
+}
+section
+{
+	margin: 0px 5px 0px 5px;
+	background-color: rgba(0, 0, 0, 1);
+}
+section h2
+{
+	margin-bottom: 1px;
+	font-size: 2em;
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+section p
+{
+	margin-top: 0px;
+}
+aside
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 0px 1px 0px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 0.9em;
+	color: black;
+	width: 100%;
+}
+.photo
+{
+	border: 2px solid red;
+	background-color: #FF7800;
+	width: 100%;
+}
+figcaption 
+{
+	border-bottom: 5px;
+}
+.spotify
+{
+	border: 2px solid red;
+	background-color: #FF7800;
+	width: 100%;
+}
+
+aside h3
+{
+	text-decoration: underline;
+	text-decoration-color: red;
+	margin-bottom: 1px;
+	text-align: center;
+}
+aside a
+{
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	font-size: 0.9em;
+	text-decoration: none;
+	color: black;
+	margin-top: 1px;
+}
+aside img 
+{
+	max-width: 100%;
+	height: auto;
+}
+aside iframe
+{
+	border: 0px;
+	height: 250px;
+
+}
+
+/* Définition de l'élément <footer> */
+footer
+{
+	width: 90%;
+	margin: auto;
+}
+footer h2
+{
+	text-align: center;
+	margin-top: 10px;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+#fondateurs
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+footer a[href*="html"]
+{
+	border: 2px solid #FF7800;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	margin-right: 10px;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	color: yellow;
+}
+footer a:hover
+{
+	color: red;
+}
+
+/* Flèche retour haut */ 
+
+#arrow
+{
+	position: fixed;
+	right: 1px;
+	bottom: 1px;	
+	height: 45px;
+	width: 20px;
+	border: 2px solid #FF7800;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	margin-right: 10px;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: yellow;
+}
