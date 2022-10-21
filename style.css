@@ -270,7 +270,6 @@ header
 {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 2px solid red;
 	width: 90%;
 	margin: auto;
 }
@@ -326,9 +325,8 @@ a:hover
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
-	border-bottom: 2px solid red;
-	border-left: 2px solid red;
-	border-right: 2px solid red;
+	border: 2px solid red;
+	border-radius: 5px;
 	width: 90%;
 	margin: auto;
 }
@@ -365,6 +363,7 @@ aside
 .photo
 {
 	border: 2px solid red;
+	border-radius: 5px;
 	background-color: #FF7800;
 	width: 100%;
 }
@@ -375,6 +374,7 @@ figcaption
 .spotify
 {
 	border: 2px solid red;
+	border-radius: 5px;
 	background-color: #FF7800;
 	width: 100%;
 }
