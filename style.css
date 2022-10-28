@@ -157,7 +157,7 @@ header img
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 1);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -166,7 +166,7 @@ header img
   }
   .nav > .nav-links > a {
     display: block;
-    width: 100%;
+    width: 99%;
 	text-decoration: none;
 	color: yellow;
   }
@@ -174,7 +174,7 @@ header img
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(21.5vh - 50px);
     overflow-y: auto;
   }
 }
