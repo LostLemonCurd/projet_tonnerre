@@ -1,5 +1,5 @@
 
-/* Éléments principaux du site */
+		/* Éléments principaux du site */
 
 body
 {
@@ -7,9 +7,9 @@ body
 	font-family: 'Gambetta-Variable', Impact, serif;
 	color: white;
 }
-/* Essais d'adaptation à différents formats d'écrans */
+		/* Essais d'adaptation à différents formats d'écrans */
 
-/* Définition de l'élément <header> */
+		/* Définition de l'élément <header> */
 
 header
 {
@@ -28,7 +28,7 @@ header img
 	width: 100%;
 	height: auto;
 }
-/* <nav> */
+		/* NAVBAR */
 
 .nav {
   display: flex;
@@ -126,7 +126,7 @@ header img
     overflow-y: auto;
   }
 }
-/* FIN DE NAVBAR*/
+		/* FIN DE NAVBAR*/
 a
 {
 	text-decoration: none;
@@ -137,7 +137,7 @@ a:hover
 	color: red;
 }
 
-/* Définition de l'élément <section> */
+		/* Définition de l'élément <section> */
 
 main
 {
@@ -178,69 +178,31 @@ section p
 	border: 0px;
 	height: 80px;
 }
-
-/* Définition de l'élément <footer> */
-footer
-{
-	width: 90%;
-	margin: auto;
-}
-footer h2
-{
-	text-align: center;
-	margin-top: 10px;
-	text-decoration: underline;
-	text-decoration-color: red;
-}
-#fondateurs
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-footer a[href*="html"]
-{
-	border: 2px solid #FF7800;
-	border-radius: 5px;
-	padding: 2px 2px 2px 2px;
-	margin-right: 10px;
-	width: 200px;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-}
-footer a:hover
-{
-	color: red;
-}
-
-/* Flèche retour haut */
-
-#arrow
-{
-	position: fixed;
-	right: 1px;
-	bottom: 1px;
-	height: 45px;
-	width: 20px;
-	border: 2px solid #FF7800;
-	border-radius: 5px;
-	padding: 2px 2px 2px 2px;
-	margin-right: 10px;
-	font-size: 1.5em;
-	text-decoration: none;
-	color: yellow;
-}
-/* Carousel tryout */
+		/* Carousel tryout */
 
 #demo
 {
 	width: 900px;
 	margin: auto;
 }
-	/* Make the image fully responsive */
+#demo h2
+{
+	text-align: center;
+	margin-top: 10px;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+#demo .carousel-inner a 
+{
+	border: 2px solid #FF7800;
+	border-radius: 5px;
+	background: black;
+	padding: 10px;
+}
+
+		/* Make the image fully responsive */
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
 }
+
