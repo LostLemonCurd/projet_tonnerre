@@ -5,76 +5,23 @@ body
 {
 	background-image: url("photos/background.jpg");
 	font-family: 'Gambetta-Variable', Impact, serif;
-	color: yellow;
-}
-#bloc-page
-{
-	margin: auto;
-	width: device-width;
+	color: white;
 }
 /* Essais d'adaptation à différents formats d'écrans */
-
-@media screen and (max-device-width: 480px)
-{
-	#bloc-page
-    {
-		width: auto;
-        margin: auto;
-    }
-	header
-	{
-		display: flex;
-		flex-direction: column;
-	}
-	header img
-	{
-		justify-content: center;
-		align-items: center;
-	}
-    ul
-    {
-		justify-content: center;
-		align-items: center;
-    }
-	li
-	{
-		margin-bottom: 2px;
-	}
-	#section
-	{
-		display: flex;
-		flex-direction: column;
-	}
-	section
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center
-	}
-	aside
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-}
 
 /* Définition de l'élément <header> */
 
 header
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
 	width: 90%;
 	margin: auto;
 }
 #logo
 {
-	border-bottom: 2px solid red;
-	margin: auto;
+	margin-left: 100px;
 }
 header img
 {
@@ -151,7 +98,7 @@ header img
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 3px solid yellow;
+    border-top: 3px solid white;
   }
   .nav > .nav-links {
     position: absolute;
@@ -168,7 +115,7 @@ header img
     display: block;
     width: 99%;
 	text-decoration: none;
-	color: yellow;
+	color: white;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -182,7 +129,7 @@ header img
 a
 {
 	text-decoration: none;
-	color: yellow;
+	color: white;
 }
 a:hover
 {
@@ -191,13 +138,11 @@ a:hover
 
 /* Définition de l'élément <section> */
 
-#section
+main
 {
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
-	border: 2px solid red;
-	border-radius: 5px;
 	width: 90%;
 	margin: auto;
 }
@@ -206,8 +151,13 @@ section
 	margin: 0px 5px 0px 5px;
 	background-color: rgba(0, 0, 0, 1);
 }
+main section img
+{
+	
+}
 section h2
 {
+	margin-top: 0px;
 	margin-bottom: 1px;
 	font-size: 2em;
 	font-style: italic;
@@ -249,38 +199,17 @@ figure img
 }
 .spotify
 {
-	border: 2px solid red;
 	border-radius: 5px;
-	background-color: #FF7800;
-	width: 100%;
 }
-
-aside h3
-{
-	text-decoration: underline;
-	text-decoration-color: red;
-	margin-bottom: 1px;
-	text-align: center;
-}
-aside a
-{
-	border: 2px solid black;
-	border-radius: 5px;
-	padding: 2px 2px 2px 2px;
-	font-size: 0.9em;
-	text-decoration: none;
-	color: black;
-	margin-top: 1px;
-}
-aside img
+.spotify img
 {
 	max-width: 100%;
 	height: auto;
 }
-aside iframe
+.spotify iframe
 {
 	border: 0px;
-	height: 250px;
+	height: 80px;
 
 }
 
@@ -313,7 +242,7 @@ footer a[href*="html"]
 	width: 200px;
 	text-align: center;
 	text-decoration: none;
-	color: yellow;
+	color: white;
 }
 footer a:hover
 {
