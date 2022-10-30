@@ -3,7 +3,7 @@
 
 body
 {
-	background-image: url("photos/background.jpg");
+	background: #263254;
 	font-family: 'Gambetta-Variable', Impact, serif;
 	color: white;
 }
@@ -29,13 +29,14 @@ header img
 	height: auto;
 }
 /* <nav> */
+
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 100%;
-  background-color: black;
+  background-color: #263254;
   position: relative;
 }
 
@@ -71,7 +72,7 @@ header img
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #263254;
 }
 
 .nav > #nav-check {
@@ -92,7 +93,7 @@ header img
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #263254;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -149,11 +150,6 @@ main
 section
 {
 	margin: 0px 5px 0px 5px;
-	background-color: rgba(0, 0, 0, 1);
-}
-main section img
-{
-	
 }
 section h2
 {
@@ -168,35 +164,6 @@ section p
 {
 	margin-top: 0px;
 }
-aside
-{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: 0px 0px 1px 0px;
-	text-align: center;
-	border-radius: 5px;
-	font-size: 0.9em;
-	color: black;
-	width: 100%;
-}
-.photo
-{
-	border: 2px solid red;
-	border-radius: 5px;
-	background-color: #FF7800;
-	width: 100%;
-	height: 292.35px;
-}
-figcaption
-{
-	border-bottom: 5px;
-}
-figure img 
-{
-	margin-top: 5px;
-}
 .spotify
 {
 	border-radius: 5px;
@@ -210,7 +177,6 @@ figure img
 {
 	border: 0px;
 	height: 80px;
-
 }
 
 /* Définition de l'élément <footer> */
@@ -265,4 +231,9 @@ footer a:hover
 	font-size: 1.5em;
 	text-decoration: none;
 	color: yellow;
+}
+	/* Make the image fully responsive */
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
 }
