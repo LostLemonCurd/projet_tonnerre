@@ -232,6 +232,13 @@ footer a:hover
 	text-decoration: none;
 	color: yellow;
 }
+/* Carousel tryout */
+
+#demo
+{
+	width: 900px;
+	margin: auto;
+}
 	/* Make the image fully responsive */
 .carousel-inner img {
 	width: 100%;
