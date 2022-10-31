@@ -119,7 +119,7 @@ header img
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(21.5vh - 50px);
+    height: calc(22vh);
     overflow-y: auto;
   }
 }
