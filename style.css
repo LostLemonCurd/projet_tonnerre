@@ -3,7 +3,7 @@
 
 body
 {
-	background: #263254;
+	background-image: url("photos/background.jpg");
 	font-family: 'Gambetta-Variable', Impact, serif;
 	color: white;
 }
@@ -19,10 +19,6 @@ header
 	width: 90%;
 	margin: auto;
 }
-#logo
-{
-	margin-left: 100px;
-}
 header img
 {
 	width: 100%;
@@ -36,7 +32,6 @@ header img
   align-items: center;
   height: 50px;
   width: 100%;
-  background-color: #263254;
   position: relative;
 }
 
@@ -145,11 +140,26 @@ main
 	flex-direction: column;
 	text-align: justify;
 	width: 90%;
-	margin: 90px auto 0px;
+	margin: 20px auto 0px;
 }
 section
 {
 	margin: 0px 5px 0px 5px;
+}
+.spotify
+{
+	border-radius: 5px;
+	margin: auto;
+}
+.spotify img
+{
+	max-width: 100%;
+	height: auto;
+}
+.spotify iframe
+{
+	border: 0px;
+	height: 80px;
 }
 section h2
 {
@@ -163,25 +173,12 @@ section p
 {
 	margin-top: 0px;
 }
-.spotify
-{
-	border-radius: 5px;
-}
-.spotify img
-{
-	max-width: 100%;
-	height: auto;
-}
-.spotify iframe
-{
-	border: 0px;
-	height: 80px;
-}
 		/* Carousel tryout */
 
 #demo
 {
-	width: 900px;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 }
 #demo h2
