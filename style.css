@@ -67,7 +67,7 @@ header img
 }
 
 .nav > .nav-links > a:hover {
-  background-color: #263254;
+	text-decoration: none;
 }
 
 .nav > #nav-check {
@@ -88,7 +88,6 @@ header img
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: #263254;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -112,6 +111,9 @@ header img
     width: 99%;
 	text-decoration: none;
 	color: white;
+  }
+  .nav > .nav-links > a:hover {
+	color: red;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -177,7 +179,7 @@ section p
 
 #demo
 {
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	margin: auto;
 }
@@ -193,12 +195,23 @@ section p
 	border: 2px solid #FF7800;
 	border-radius: 5px;
 	background: black;
-	padding: 10px;
+	padding: 5px;
 }
 
 		/* Make the image fully responsive */
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
+}
+
+		/* Footer */
+footer
+{
+	margin: 20px auto;
+	width: 70%;
+}
+footer p
+{
+	font-size: 0.7em;
 }
 
