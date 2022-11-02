@@ -53,51 +53,12 @@ header img
   width: 200px;
   margin-right: 5px;
 }
-.dropdown > span,.drop-content {
-  display: inline-block;
-  border: 2px solid #FF7800;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2px 0px 2px 0px;
-  width: 200px;
-  margin-right: 5px;
-  font-size: 18px;
-}
-.dropdown
-{
-  display: flex;
-  flex-direction: row;
-}
-.drop-content
-{
-  display: none;
-}
-.dropdown:hover .drop-content
-{
-  display: block;
-  z-index: 1;
-  text-decoration: none;
-}
-.dropdown:hover > a,.drop-content a
-{
-  text-decoration: none;
-  font-size: 18px;
-  padding: 2px;
-}
-a[href="photos/tonnerre1.pdf"]
-{
-  border-right: 1px solid #FF7800;
-  padding-right: 2px;
-}
 .nav > .nav-links > a:hover {
 	text-decoration: none;
 }
-
 .nav > #nav-check {
   display: none;
 }
-
-
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -137,7 +98,6 @@ a[href="photos/tonnerre1.pdf"]
   .nav > .nav-links > a:hover {
 	color: red;
   }
-
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(22vh);
     overflow-y: auto;
