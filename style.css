@@ -7,6 +7,11 @@ body
 	font-family: 'Gambetta-Variable', Impact, serif;
 	color: white;
 }
+#wrapper
+{
+	width: 90%;
+	margin: auto;
+}
 		/* Essais d'adaptation à différents formats d'écrans */
 
 		/* Définition de l'élément <header> */
