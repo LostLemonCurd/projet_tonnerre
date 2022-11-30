@@ -4,7 +4,7 @@
 body
 {
 	background-image: url("photos/background.jpg");
-	font-family: 'Gambetta-Variable', Impact, serif;
+	font-family: 'Gambetta', serif;
 	color: white;
 }
 #wrapper
@@ -159,6 +159,7 @@ section h2
 section p
 {
 	margin-top: 0px;
+	font-size: 1.5em;
 }
 		/* Carousel tryout */
 
