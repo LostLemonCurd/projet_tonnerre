@@ -8,114 +8,135 @@
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="boostrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="script.js" defer></script>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="script.js" defer></script>
 		<title>Tonnerre!</title>
 	</head>
-
+  
 	<body>
 		<div id="wrapper">
 			<header>
 				<div id="logo">
 					<img src="img/bandeau-logo.png" alt="Logo Tonnerre">
+					<button class="burger" id="burger">
+						<span></span>
+						<span class="mid-span"></span>
+						<span></span>
+					</button>
+				</div>
+				<nav class="nav navOff">
+					<a class="menu" href="https://linktr.ee/tonnerrezine" target="_blank">Linktree</a>
 					<a class="menu" href="mailto:tonnerrezine@gmail.com" target="_blank">Contact</a>
-				</div>
-				<div class="nav">
-					<a class="menu" href="#">Les Auteurs</a>
-					<a class="menu" href="#" target="_blank">Les Articles</a>
 					<a class="menu" href="img/tonnerre1.pdf" target="_blank">Le Fanzine</a>	
-				</div>
+				</nav>
 				
 			</header>
-
+			
 			<main>
-				<div class="spotify">
-					<iframe src="https://open.spotify.com/embed/playlist/1VlSdVlK0CEdsMXqILB911" allow="encrypted-media"></iframe>
-				</div>
+				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1VlSdVlK0CEdsMXqILB911?utm_source=generator" width="100%" height="130" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+				</iframe>
+				
+				<h2 class="edito-h2">L'Édito du Rédacteur en Chef, Mars 2021.</h2>
 				<section class="edito">
-					<h2>L'Édito du Rédacteur en Chef, Mars 2021.</h2>
-					<p> <cite> Pas envie de se lever le matin, de vivre une journée, toujours la même. Pas envie de sortir juste pour faire ses courses, prendre trois rayons de soleil, bosser, retourner se coucher. Pas envie de rester chez soi, le soir. Envie de danser. De boire, attablé dans un bar. De boire un peu trop. De retourner danser. Envie de crier dehors la nuit, dans la rue. Envie de sourire, tout seul. D’écouter de la musique, à plusieurs. A un concert. De ne pas se rappeler des paroles mais de les hurler quand même, confit dans sa sueur, parmi des inconnus. Envie de remplacer le ciel gris et bas par des spots de couleurs, des tableaux, des sculptures, des pièces de théâtre que l’on ne comprend pas. Envie de voir un film, dans une salle, de ne pas l’aimer, et de pouvoir en parler après. Envie de vivre quelque chose d’inattendu. Un passage à une soirée qui s’éternise. Une expo sur un artiste dont on n’avait jamais entendu parler. Une longue balade nocturne, faute de transports, qui nous fait découvrir des quartiers que l’on ne connaissait pas. Envie que chaque jour redevienne une aventure, même toute petite, même inutile.<br> Exister là, quelque part, nulle part, et faire du bruit. Comme le tonnerre. <br><br><em>Dante Del Ghingaro</em> <br> </cite> </p>
+					<p> <cite> Pas envie de se lever le matin, de vivre une journée, toujours la même. Pas envie de sortir juste pour faire ses courses, prendre trois rayons de soleil, bosser, retourner se coucher. Pas envie de rester chez soi, le soir. Envie de <span>danser</span> . De <span>boire</span> , attablé dans un bar. De boire un peu trop. De retourner danser. Envie de crier dehors la nuit, dans la rue. Envie de sourire, tout seul. D’écouter de la <span>musique</span>, à plusieurs. A un concert. De ne pas se rappeler des paroles mais de les <span>hurler</span> quand même, confit dans sa sueur, parmi des inconnus. Envie de remplacer le ciel gris et bas par des spots de couleurs, des <span>tableaux</span>, des sculptures, des pièces de <span>théâtre</span> que l’on ne comprend pas. Envie de voir un <span>film</span>, dans une salle, de ne pas l’aimer, et de pouvoir en parler après. Envie de <span>vivre</span> quelque chose d’inattendu. Un passage à une soirée qui s’éternise. Une expo sur un artiste dont on n’avait jamais entendu parler. Une longue <span>balade</span> nocturne, faute de transports, qui nous fait découvrir des quartiers que l’on ne connaissait pas. Envie que chaque jour redevienne une <span>aventure</span>, même toute petite, même inutile.<br> Exister là, quelque part, nulle part, et faire du bruit. Comme le <span>Tonnerre!</span>  <br><br><em>Dante Del Ghingaro</em> <br> </cite> </p>
 				</section>
+				
 				<!-- Carousel --> 
-				<div id="demo" class="carousel slide" data-ride="carousel">
+				<div id="demo" class="carousel slide">
 					<h2> Les Fondat.eur.rice.s de Tonnerre!</h2>
 					<!-- Indicators -->
 					<ul class="carousel-indicators">
-					<li data-target="#demo" data-slide-to="0" class="active"></li>
-					<li data-target="#demo" data-slide-to="1"></li>
-					<li data-target="#demo" data-slide-to="2"></li>
-					<li data-target="#demo" data-slide-to="3"></li>
-					<li data-target="#demo" data-slide-to="4"></li>
-					<li data-target="#demo" data-slide-to="5"></li>
-					<li data-target="#demo" data-slide-to="6"></li>
-					<li data-target="#demo" data-slide-to="7"></li>
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+						<li data-target="#demo" data-slide-to="5"></li>
+						<li data-target="#demo" data-slide-to="6"></li>
+						<li data-target="#demo" data-slide-to="7"></li>
 					</ul>
 					
 					<!-- The slideshow -->
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item active slide0" style="position:relative">
 							<img src="img/dantemini.jpg" alt="Dante" width="1100" height="500">
-								<div class="carousel-caption">				
-									<a href="bios/dante.html" target="_blank">Dante</a>
-								</div>
+							<p class="bio">Dante ⚡<br>
+								De longues études de cinéma, des centaines d’heures d’ennui devant un bureau, et des centaines d’heures à laisser tourner les vinyles du Velvet Underground. Dante est celui qui a réuni toute l’équipe de TONNERRE ! avec une envie de créer et le reste, on s’en fout. C’est grâce à lui qu’on s’est lancés tous ensemble, et il nous abreuve d’articles construits, de motivation et de petits gâteaux apéro.</p>
+							<div class="carousel-caption">				
+								<a href="https://www.instagram.com/dante.del/" target="_blank">Dante</a>
+							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item slide1">
 							<img src="img/leomini.jpg" alt="Léo" width="1100" height="500">
+							<p class="bio">Léo ⚡<br>
+								Des centaines de salles de montage, des kilomètres de pellicule argentiques et des centaines d'accords de guitare pour s'aider à s'endormir. C'est difficile de décrire Léo tant il fait plein de choses différentes. Lui et sa chevelure soyeuse bougent toujours frénétiquement dans tous les sens pour créer et s'investir dans des milliards de projets. Léo s'occupe d'une très grosse part de la mise en page de TONNERRE !, de nombreux visuels, d'articles à venir et de la rubrique dédiée à la photographie.</p>
 							<div class="carousel-caption">				
-								<a href="bios/leo.html" target="_blank">Léo</a>
+								<a href="https://www.instagram.com/leof.e.l.i.x/" target="_blank">Léo</a>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item slide2">
 							<img src="img/lounismini.jpg" alt="Lounis" width="1100" height="500">
+							<p class="bio">Lounis ⚡<br>
+								Des centaines d’heures à siffler du Georges Brassens et du Idir, un accent anglais bien meilleur que celui de Lord Farquad et une moustache plus stylée que celle d’Asterix. Lounis aime écrire des poèmes (dont les premières lettres de chaque vers forment des phrases lubriques), mais également des fictions crasseuses pleines de violence et de stupre. Il va bientôt vous régaler avec son histoire de détective privé déjà cancel, et ses poèmes pleins de sensibilité.</p>
 							<div class="carousel-caption">				
-								<a href="bios/lounis.html" target="_blank">Lounis</a>
+								<a href="https://www.instagram.com/lostlemoncurd/" target="_blank">Lounis</a>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item slide3">
 							<img src="img/romanemini.jpg" alt="Romane" width="1100" height="500">
+							<p class="bio">Romane ⚡<br>
+								Des centaines d’heures passées à étudier les Grandes Horizontales du Second Empire, le diktat de la pilosité, la peinture, les finnois de Laponie et Eddie Mitchell. Autrice d’un incroyable mémoire sur la pilosité féminine au XIXe siècle, Romane est également passionnée par le dessin, le risotto et Eddie Mitchell. Vous pourrez lire un article tiré des conclusions du-dit mémoire dans le premier numéro de TONNERRE ! (mais sans Eddie Mitchell).</p>
 							<div class="carousel-caption">				
-								<a href="bios/romane.html" target="_blank">Romane</a>
+								<a href="https://www.instagram.com/romanesct/" target="_blank">Romane</a>
 							</div>
 						</div>
-						<div class="carousel-item">
+
+						<div class="carousel-item slide4">
 							<img src="img/lisemini.jpg" alt="Lise" width="1100" height="500">
+							<p class="bio">Lise ⚡ <br>
+								Des centaines d’heures à faire son pain et confectionner des éponges avec ses vieilles chaussettes, des études de scénariste et des heures et des heures à s’arracher les cheveux devant les méfaits du patriarcat. Lise aime écrire, dessiner (des choses obscènes), rire, danser, virevolter, tomber, se relever, recommencer. Jadis (quand ça existait) amatrice de gros concerts de rock, elle erre désormais dans les rues de Villeurbanne avec son bombers sur le dos, à la recherche de son fix de fun. Elle vous propose dans le numéro de juin la première partie d’une histoire qui lui tient à coeur depuis longtemps, mettant en scène notamment la Vierge et du karaoké.
+								</figure></p>
 							<div class="carousel-caption">				
-								<a href="bios/lise.html" target="_blank">Lise</a>
+								<a href="" target="_blank">Lise</a>
 							</div>
 						</div>
-						<div class="carousel-item">
+
+						<div class="carousel-item slide5">
 							<img src="img/louisemini.png" alt="Louise" width="1100" height="500">
+							<p class="bio">Louise ⚡<br>
+								Toute la discographie d’Elton John en vinyles, le cheveu changeant comme les saisons, et un amour infini des chats et des drag queens. En école d’illustration, Louise est passionnée par le dessin. Une passion qu’elle met à contribution pour offrir à « TONNERRE ! » son esthétique post punk et grunge. Illustratrice de la couverture, community manager en or, c'est elle qui a conçu l’esthétique de ce fanzine. Vos mirettes vont prendre un gros coup de qualité dans la rétine à la vue de son oeuvreeeee.</p>
 							<div class="carousel-caption">				
-								<a href="bios/louise.html" target="_blank">Louise</a>
+								<a href="https://www.instagram.com/louisalphonsine/" target="_blank">Louise</a>
 							</div>
 						</div>
-						<div class="carousel-item">
+
+						<div class="carousel-item slide6">
 							<img src="img/cesarmini.jpg" alt="César" width="1100" height="500">
+							<p class="bio">César ⚡ <br> Un acrobate impressionnant, un chanteur cristallin, un danseur virtuose, un acteur émouvant et une paire de lunettes sans pareille, comment résumer César en peu de mots ? Non content de se vouer aux arts de la scène, il donne des cours de français aux migrants en situation irrégulière depuis plusieurs années. Il va traiter dans les prochains numéros de ce sujet terriblement actuel, avec une série d’articles foutrement bien ficelée.</p>
 							<div class="carousel-caption">				
-								<a href="bios/cesar.html" target="_blank">César</a>
+								<a href="https://www.instagram.com/cesar_vlt/" target="_blank">César</a>
 							</div>
 						</div>
 					</div>
 					
 					<!-- Left and right controls -->
 					<a class="carousel-control-prev" href="#demo" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
+						<span class="carousel-control-prev-icon"></span>
 					</a>
 					<a class="carousel-control-next" href="#demo" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
+						<span class="carousel-control-next-icon"></span>
 					</a>
 				</div>
 			</main>
 			<footer>
-				<a class="menu" href="https://linktr.ee/tonnerrezine" target="_blank">Linktree</a>
 				<p>@tonnerrezine 2023</p>
 				<p>Made by Lounis</p>
 			</footer>
 		</div>
 	</body>	
-</html>
-
-
-
+	</html>
+	
+	
+	

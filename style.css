@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* Éléments principaux du site */
+		/* Éléments principaux du site */
 
 body{
 	background-color: black;
@@ -7,77 +8,22 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 }
-#bloc-page
-{
-	margin: auto;
-	width: device-width;
-}
-/* Essais d'adaptation à différents formats d'écrans */
-
-@media screen and (max-device-width: 480px)
-{
-	#bloc-page
-    {
-		width: auto;
-        margin: auto;
-    }
-	header
-	{
-		display: flex;
-		flex-direction: column;
-	}
-	header img
-	{
-		justify-content: center;
-		align-items: center;
-	}
-    ul
-    {
-		justify-content: center;
-		align-items: center;
-    }
-	li
-	{
-		margin-bottom: 2px;
-	}
-	#section
-	{
-		display: flex;
-		flex-direction: column;
-	}
-	section
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center
-	}
-	aside
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-}
-
-/* Définition de l'élément <header> */
-
-header
-{
-	display: flex;
-	flex-direction: column;
+#wrapper{
 	width: 90%;
 	margin: auto;
 }
-#logo
-{
-	border-bottom: 2px solid red;
+		/* Essais d'adaptation à différents formats d'écrans */
+
+		/* Définition de l'élément <header> */
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
 	margin: auto;
 }
-header img
-{
+header img{
 	width: 100%;
 	height: auto;
 }
@@ -85,15 +31,12 @@ header img
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 10%;
 }
 		/* NAVBAR */
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  width: 100%;
+nav {
+	width: 100%;
 }
 .menu {
 	font-size: 22px;
@@ -126,69 +69,19 @@ header img
 	margin: 6px 0;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 3px solid yellow;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 1);
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 99%;
+		/* FIN DE NAVBAR*/
+a{
 	text-decoration: none;
-	color: yellow;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(21.5vh - 50px);
-    overflow-y: auto;
-  }
+	color: white;
 }
-/* FIN DE NAVBAR*/
-a
-{
-	text-decoration: none;
-	color: yellow;
-}
-a:hover
-{
+a:hover{
 	color: red;
 	text-decoration: none;
 }
 
-/* Définition de l'élément <section> */
+		/* Définition de l'élément <section> */
 
-#section
-{
+main{
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
@@ -199,124 +92,88 @@ a:hover
 	border: 2px solid #fff;
 	border-radius: 10px;
 	padding: 18px;
+	background-color: black;
+	max-height: 678px;
+	overflow: scroll;
 }
-.spotify{
-	border-radius: 5px;
-	margin: auto;
-}
-.spotify img{
-	max-width: 100%;
-	height: auto;
-}
-.spotify iframe{
-	border: 0px;
-	height: 80px;
-}
-section h2{
+.edito-h2{
 	font-size: 2em;
 	font-style: italic;
 	text-decoration: underline;
 	text-decoration-color: red;
-}
-section p
-{
-	margin-top: 0px;
-}
-aside
-{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: 0px 0px 1px 0px;
-	text-align: center;
-	border-radius: 5px;
-	font-size: 0.9em;
-	color: black;
-	width: 100%;
-}
-.photo
-{
-	border: 2px solid red;
-	border-radius: 5px;
-	background-color: #FF7800;
-	width: 100%;
-	height: 292.35px;
-}
-figcaption
-{
-	border-bottom: 5px;
-}
-figure img 
-{
-	margin-top: 5px;
-}
-.spotify
-{
-	border: 2px solid red;
-	border-radius: 5px;
-	background-color: #FF7800;
-	width: 100%;
-}
-
-aside h3
-{
-	text-decoration: underline;
-	text-decoration-color: red;
-	margin-bottom: 1px;
 	text-align: center;
 }
 section p{
 	margin-top: 0px;
 	font-size: 1.5em;
 }
+section p span{
+	color: yellow;
+}
+		/* Carousel tryout */
 
 #demo{
-	width: 80%;
+	width: 50%;
 	height: 100%;
 	margin: auto;
 }
-footer h2
-{
+#demo h2{
 	text-align: center;
 	margin-top: 10px;
 	text-decoration: underline;
 	text-decoration-color: red;
 }
-#fondateurs
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-footer a[href*="html"]
-{
+#demo .carousel-inner a {
 	border: 2px solid #FF7800;
 	border-radius: 5px;
-	padding: 2px 2px 2px 2px;
-	margin-right: 10px;
-	width: 200px;
-	text-align: center;
-	text-decoration: none;
-	color: yellow;
+	background: black;
+	padding: 5px;
 }
-
+.carousel-control-next,
+.carousel-control-prev {
+	top: 24%;
+}
 		/* Make the image fully responsive */
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
 }
-.carousel-inner:hover{
-	opacity: 0.5;
+
+.bio{
+	display: none;
+	padding: 6px 54px;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: ease-in-out .5;
 }
 
 		/* Footer */
 footer{
+	display: flex;
+	justify-content: center;
 	margin: 20px auto;
-	width: 70%;
+	gap: 20px;
 }
 footer p{
 	font-size: 0.7em;
 }
-
+@media screen and (max-width: 800px){
+	#logo{
+		flex-wrap: wrap;
+	}
+	.burger{
+		margin: auto;
+	}
+	.edito{
+		max-height: 532px;
+	}
+}
+@media screen and (max-width: 900px){
+	#demo{
+		width: 90%;
+	}
+}
